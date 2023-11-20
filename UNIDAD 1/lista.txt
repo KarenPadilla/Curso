@@ -4,4 +4,3 @@ uvas
 lechuga
 tomate
 palta 
-frutilla
