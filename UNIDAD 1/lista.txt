@@ -3,3 +3,5 @@ banana
 uvas
 lechuga
 tomate
+palta 
+frutilla
