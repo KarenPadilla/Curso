@@ -1,0 +1,16 @@
+.contenedor{
+    display: flex;
+}
+
+.cuadrado{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.rojo{
+    background-color: red;}
+
+.rosa{
+    background-color: pink;}
+.azul{
+    background-color: blue;}
