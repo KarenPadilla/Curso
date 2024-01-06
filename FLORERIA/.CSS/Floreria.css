@@ -1,0 +1,18 @@
+
+
+.contenedor{
+    display: flex;
+    vertical-align: center;
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+    
+ }
+.lista-novedades{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Seymour One', sans-serif;
+    
+ }
+
+ 
