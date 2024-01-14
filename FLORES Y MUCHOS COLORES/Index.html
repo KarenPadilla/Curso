@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https: //fonts.googleapis.com/css2? family= Seymour+One & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=".CSS/Floreria.css">
-    <title>Alegria</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
+<link rel="stylesheet" href=".CSS/style.css">
+    <title>Flores y muchos colores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" style="background-color: white;">
-            <a class="navbar-brand" href="#"><img src="IMG/Captura de pantalla 2024-01-10 203335.png"
-                    alt="IMG/Captura de pantalla 2024-01-10 203335.png" width="100px">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Home</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><button class="dropdown-item" type="button"><a
-                                        href="https://www.instagram.com/">Instagram</a></button></li>
-                            <li><button class="dropdown-item" type="button"><a href="link.html">Conoce nuestro
-                                        trabajo</a></button></li>
-                            <li><button class="dropdown-item" type="button"><a href="link.html">Trabaja con
-                                        nosotros</a></button></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nuestras recomendaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
+        <div class="container-fluid" style="background-color: lightblue;">
+          <a class="navbar-brand" href="#"><img src="imagenes/Captura de pantalla 2024-01-10 203335.png" alt="imagenes/Captura de pantalla 2024-01-10 203335.png" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="novedades">Novedades</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/">Instagram</a></li>
+                  <li><a class="dropdown-item" href="link.html">Conoce nuestro trabajo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="link.html">Trabaja con nosotros</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="page" href="nuestras recomendaciones">Nuestras recomendaciones</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
-    <div class="container-fluid" style="background-color: lightcyan;">
+      </nav>
+      <div  class="container-fluid" style="background-color: lightcyan;">
         <div class="contenedor">
-            <div class="container text-center">
+            <div id="home"class="container text-center">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <h1>FLOWERS</h1>
@@ -79,15 +72,15 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="IMG/IMG_3181.jpg" class="d-block w-100" alt="IMG/IMG_3181.jpg" width="300"
+                            <img src="imagenes/IMG_3181.jpg" class="d-block w-100" alt="imagenes/IMG_3181.jpg" width="300"
                                 height="500">
                         </div>
                         <div class="carousel-item">
-                            <img src="IMG/IMG_3152.jpg" class="d-block w-100" alt="IMG/IMG_3152.jpg" width="300"
+                            <img src="imagenes/IMG_3152.jpg" class="d-block w-100" alt="imagenes/IMG_3152.jpg" width="300"
                                 height="500">
                         </div>
                         <div class="carousel-item">
-                            <img src="IMG/IMG_3222.jpg" class="d-block w-100" alt="IMG/IMG_3222.jpg" width="300"
+                            <img src="imagenes/IMG_3222.jpg" class="d-block w-100" alt="imagenes/IMG_3222.jpg" width="300"
                                 height="500">
                         </div>
                     </div>
@@ -103,13 +96,13 @@
                     </button>
                 </div>
             </div>
-            <div id="Novedades" class="row align-items-stretch my-3 py4" style="background-color: rgb(75, 184, 201);">
+            <div id="novedades" class="row align-items-stretch my-3 py4" style="background-color: rgb(75, 184, 201);">
                 <div class="col-lg-8 offset-lg-2">
                     <h1>Novedades</h1>
                     <div class="row row-cols-1 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card" style="width: 18rem;">
-                                <img src="IMG/1.jpg" class="card-img-top" alt="No te quedes sin el tuyo">
+                                <img src="imagenes/1.jpg" class="card-img-top" alt="No te quedes sin el tuyo">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
@@ -121,7 +114,7 @@
                         </div>
                         <div class="col">
                             <div class="card" style="width: 18rem;">
-                                <img src="IMG/IMG_3155.jpg" class="card-img-top" alt="Nueva variedad">
+                                <img src="imagenes/IMG_3155.jpg" class="card-img-top" alt="Nueva variedad">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
@@ -133,7 +126,7 @@
                         </div>
                         <div class="col">
                             <div class="card" style="width: 18rem;">
-                                <img src="IMG/IMG_3222.jpg" class="card-img-top" alt="Volvieron">
+                                <img src="imagenes/IMG_3222.jpg" class="card-img-top" alt="Volvieron">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the
@@ -150,14 +143,14 @@
         </div>
     </div>
     <div class="row my-3">
-        <div id="Novedades" class="col-md-5 offset-md-2">
+        <div id="nuestras recomendaciones" class="col-md-5 offset-md-2">
             <h2>Nuestras recomendaciones</h2>
             <ul class="lista-novedades">
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="IMG/IMG_3151.jpg"
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="imagenes/IMG_3181.jpg"
                             width="100" height="100"> La importancia de las flores en nuestros hogares</a></li>
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="IMG/IMG_3222.jpg"
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="imagenes/1.jpg"
                             width="100" height="100"> ¿Por que regalar flores?</a></li>
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="IMG/IMG_3155.jpg"
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="imagenes/IMG_3155.jpg"
                             width="100" height="100"> Como las cuidamos</a></li>
             </ul>
         </div>
@@ -236,15 +229,7 @@
 
 </div>
 </div>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
