@@ -15,16 +15,29 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" style="background-color: pink;">
-            <a class="navbar-brand" href="#">Home</a>
+        <div class="container-fluid" style="background-color: white;">
+            <a class="navbar-brand" href="#"><img src="IMG/Captura de pantalla 2024-01-10 203335.png"
+                    alt="IMG/Captura de pantalla 2024-01-10 203335.png" width="100px">
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="#">Home</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><button class="dropdown-item" type="button"><a
+                                        href="https://www.instagram.com/">Instagram</a></button></li>
+                            <li><button class="dropdown-item" type="button"><a href="link.html">Conoce nuestro
+                                        trabajo</a></button></li>
+                            <li><button class="dropdown-item" type="button"><a href="link.html">Trabaja con
+                                        nosotros</a></button></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nuestras recomendaciones</a>
@@ -39,12 +52,12 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: lightcyan;">
         <div class="contenedor">
             <div class="container text-center">
                 <div class="row align-items-center">
-                    <div class="col-12" style="background-color: plum;">
-                        <h1>Bienvenidos</h1>
+                    <div class="col-12">
+                        <h1>FLOWERS</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui odio, nemo voluptatum optio
                             assumenda cupiditate neque doloremque?</p>
                     </div>
@@ -52,26 +65,9 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
-            <div class="col-12" style="background-color: pink;">Seguinos en nuestras redes sociales</div>
-            <div class="col-5">
-                <h1>NOMBRE</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error architecto sapiente voluptatibus
-                    voluptas. Nemo dolores soluta, voluptatem illum cum nihil. Necessitatibus dolorum labore vitae earum
-                    illum accusantium exercitationem repellendus repudiandae!</p>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"> Dejanos tus preguntas</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-dark">ENVIAR</button>
-            </div>
-            <div class="col-7">
+            <div class="col-md-8  offset-md-2" >
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -107,18 +103,62 @@
                     </button>
                 </div>
             </div>
+            <div id="Novedades" class="row align-items-stretch my-3 py4" style="background-color: rgb(75, 184, 201);">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Novedades</h1>
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="IMG/1.jpg" class="card-img-top" alt="No te quedes sin el tuyo">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="IMG/IMG_3155.jpg" class="card-img-top" alt="Nueva variedad">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="IMG/IMG_3222.jpg" class="card-img-top" alt="Volvieron">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the
+                                        bulk
+                                        of the card's content.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <div class="row my-3">
         <div id="Novedades" class="col-md-5 offset-md-2">
-            <h2>Novedades</h2>
+            <h2>Nuestras recomendaciones</h2>
             <ul class="lista-novedades">
                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="IMG/IMG_3151.jpg"
-                            width="100" height="100"> Volvieron</a></li>
+                            width="100" height="100"> La importancia de las flores en nuestros hogares</a></li>
                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="IMG/IMG_3222.jpg"
-                            width="100" height="100"> No te quedes sin el tuyo</a></li>
+                            width="100" height="100"> ¿Por que regalar flores?</a></li>
                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="IMG/IMG_3155.jpg"
-                            width="100" height="100"> Nueva varidad</a></li>
+                            width="100" height="100"> Como las cuidamos</a></li>
             </ul>
         </div>
         <!-- Modal -->
@@ -171,23 +211,31 @@
             </div>
         </div>
         <!-- Modal -->
-        <div class="col-md-3 my-3">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nosotros
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button"><a href="https://www.instagram.com/">Instagram</a></button></li>
-                  <li><button class="dropdown-item" type="button"><a href="link.html">Conoce nuestro trabajo</a></button></li>
-                  <li><button class="dropdown-item" type="button"><a href="link.html">Trabaja con nosotros</a></button></li>
-                </ul>
-              </div><!--Entiendo que por cada uno tendria que hacer que vaya a un link distinto-->
-
-            
-        </div><!--cierra nostros-->
-
+        <div  class="col-5" class="Contactanos">
+            <h1>Contactanos</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error architecto sapiente voluptatibus
+                voluptas. Nemo dolores soluta, voluptatem illum cum nihil. Necessitatibus dolorum labore vitae earum
+                illum accusantium exercitationem repellendus repudiandae!</p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Dejanos tus preguntas</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-dark">ENVIAR</button>
+        </div>
+    </div>
+<div id="Visitanos" class="row-py-4">
+<div class="col-md-4 offset-md-2">
+    <h1>Visitanos</h1>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105033.59355132566!2d-58.649231974445115!3d-34.64713092194861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d491805d%3A0xd6748013d82fc42a!2sUniversidad%20Tecnol%C3%B3gica%20Nacional!5e0!3m2!1ses-419!2sar!4v1704934360966!5m2!1ses-419!2sar" ></iframe>
     </div>
 
+</div>
+</div>
 
 
 
