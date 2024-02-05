@@ -162,7 +162,8 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error architecto sapiente voluptatibus
                 voluptas. Nemo dolores soluta, voluptatem illum cum nihil. Necessitatibus dolorum labore vitae earum
                 illum accusantium exercitationem repellendus repudiandae!</p>
-            <div class="mb-3" action="/" method="post">
+            <form action="/" method="post">
+            <div class="mb-3" >
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" id="email" name="email">
             </div>
@@ -171,10 +172,11 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
             </div>
             <button type="submit" class="btn btn-dark">ENVIAR</button>
-            <p>{{message}}</p>
+           
          
         </div>
-        
+         <p>{{message}}</p>
+        </form>
  
        
     </div>
