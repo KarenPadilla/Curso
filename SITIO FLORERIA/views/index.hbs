@@ -53,6 +53,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <h1>Novedades</h1>
                     <div class="row row-cols-1 row-cols-md-3 g-3">
+                       
                         <div class="col">
                             <div class="card" style="width: 18rem;">
                                 <img src="images/1.jpg" class="card-img-top" alt="No te quedes sin el tuyo">
@@ -89,6 +90,7 @@
 
                             </div>
                         </div>
+                        
                     </div>
 
                 </div>
@@ -99,26 +101,27 @@
         <div id="recomendaciones" class="col-md-5 offset-md-2">
             <h2>Nuestras recomendaciones</h2>
             <ul class="lista-novedades">
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/IMG_3181.jpg"
-                            width="100" height="100"> La importancia de las flores en nuestros hogares</a></li>
+                 {{#each productos}}
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}"><img src="images/IMG_3181.jpg"
+                            width="100" height="100"> {{nombre}}</a></li>
                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="images/1.jpg"
                             width="100" height="100"> ¿Por que regalar flores?</a></li>
                 <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="images/IMG_3155.jpg"
                             width="100" height="100"> Como las cuidamos</a></li>
+                 {{/each}}
             </ul>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         {{#each productos}}
+        <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Volvieron</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{nombre}}</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis
-                            suscipit animi officia sequi, quasi soluta voluptas maiores amet quibusdam laboriosam in
-                            earum odit odio corporis velit est tenetur commodi.</p>
+                        <p>{{precio}}</p>
                     </div>
 
                 </div>
@@ -156,6 +159,7 @@
                 </div>
             </div>
         </div>
+         {{/each}}
         <!-- Modal -->
         <div  class="col-5" class="Contactanos">
             <h1>Contactanos</h1>

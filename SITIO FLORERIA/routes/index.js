@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer= require('nodemailer');
+var productosModel= require('../models/productosModel')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async function(req, res, next) {
+  var productos= await productosModel.getProductos();
+  res.render('index', { productos });
 });
 router.post('/', async (req, res, next) => {
 

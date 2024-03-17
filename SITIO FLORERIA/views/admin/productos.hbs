@@ -16,3 +16,63 @@
     </div>
 
 </div>
+<div class="row">
+    <div class="col 7" style="margin-top: -9px;">
+        <h2>Lista de Productos</h2>
+
+    </div>
+    <div class="col 5 text-right">
+        <a href="" class="btn btn-success"> <i class="fa-solid fa-plus"></i>Nuevo</a>
+
+    </div>
+
+</div>
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">Título</th>
+                   <th scope="col" class="text-center"> Acciones</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                {{#each productos}}
+                <tr>
+                  <th scope="row">{{id}}</th>
+                  <td>{{nombre}}</td>
+                  <td>{{precio}}</td>
+                  <td class="text-center">
+                    <a href="#" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a href="/admin/productos/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<tbody>
+   
+    <tr>
+        <th scope="row"></th>
+        <td>titulo</td>
+        <td class="text-center">
+            <a href="#" title="Editar" class="btn btn-sm btn secondary"> 
+                <i class="fa fa-pencil"></i></a>
+            <a href="#" title="Eliminar" class="btn btn-sm btn secondary"> 
+                <i class="fa fa-trash"></i></a>
+
+        </td>
+    </tr>
+   
+</tbody>
