@@ -27,7 +27,7 @@ router.get('/agregar',(req, res, next) => {
 
     router.post('/agregar', async (req, res, next) => {
         try {
-            if(req.body.productos!= ""&& req.body.precio !="" ) {
+            if(req.body.productos!= "" && req.body.precio !="" ) {
                 await productosModel.insertProductos(req.body);
                 res.redirect('/admin/productos')
             } else {
@@ -44,11 +44,11 @@ router.get('/agregar',(req, res, next) => {
                 layout:'admin/layout',
                 error: true,
                 message:'no se cargo el producto'
-            })   
+            });   
         }
-    }) 
+    }); 
         
-    router.get('/modificar', async (req, res, next)=> {
+    router.get('/modificar/:id', async (req, res, next)=> {
         var id= req.params.id;
         var productos = await productosModel.getProductosById(id);
     
