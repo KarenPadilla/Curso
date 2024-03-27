@@ -1,0 +1,29 @@
+<div class="container" style="margin: 100px 0">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h3>Modificar un producto</h3>
+            <form action="/admin/productos/modificar" method="post">
+           
+           <input type="hidden" value="{{productos.id}}" name="id">
+            <div class="form-group">
+                <label for="">Producto</label>
+                <input type="text" class="form-control"  name="productos" value="{{productos.productos}}">
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Precio</label>
+                <textarea class="form-control"  name="precio"  >{{productos.precio}}</textarea>
+
+            </div>
+            <button type="submit" class="btn btn-primary" >Modificar</button>
+            </form>
+            {{#if error}}
+             <p>{{message}}</p>
+            {{/if}}
+
+        </div>
+
+    </div>
+
+</div>
